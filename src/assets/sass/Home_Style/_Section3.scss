@@ -1,0 +1,157 @@
+.section3 {
+  padding: 40px 0px;
+  overflow: hidden;
+  width: 100%;
+  .container{
+      padding: 50px;
+  }
+  .col {
+    margin: 10px 0;
+    overflow: hidden;
+  }
+
+  .img-content-bg{
+   img{
+     width: 100%;
+   }
+  }
+  .bg-1{
+    background-image: url("http://localhost:3000/static/media/img1.4a531313.jpg");
+  }
+
+  .bg-2{
+    background-image: url("http://localhost:3000/static/media/img2.56438403.jpg");
+  }
+
+
+
+  .bg-img {
+    width: 100%;
+    height: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start ;
+    padding: 50px;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url("https://cdn.shopify.com/s/files/1/0560/3482/0282/files/img-9_1920x.png?v=1622107247");
+    transition: all .5s ease-in;
+    &:hover{
+      background-size: 150%;
+    }
+  }
+  
+
+  .content {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    p {
+      font-size: 20px;
+      margin: 10px 0;
+      color: rgb(168, 166, 166);
+      font-weight: 500;
+    }
+
+    button {
+      border: none;
+      padding: 10px 15px;
+      background-color: #ff6739;
+      color: white;
+      font-weight: 500;
+      border-radius: 5px;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: #180a05;
+        color: white;
+      }
+    }
+  }
+}
+
+
+ @media only screen and (max-width: 1200px) {
+    .section3 {
+      .bg-img {
+        padding: 30px;
+      }
+
+      .content {
+        width: 90%;
+        height: 100%;
+        p {
+          font-size: 24px;
+          margin: 10px 0;
+         
+        }
+    
+        button {
+     
+          padding: 10px 15px;
+        }
+      }
+    }
+      
+ }
+
+ @media only screen and (max-width: 992px) {
+  .section3 {
+    .bg-img {
+      padding: 30px;
+    }
+
+    .content {
+      width: 90%;
+      height: 100%;
+      h1.title{
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin: 10px 0;
+       
+      }
+  
+      button {
+   
+        padding: 6px 15px;
+      }
+    }
+  }
+    
+}
+
+@media only screen and (max-width: 576px) {
+  .section3 {
+    .container{
+      padding: 20px;
+    
+    }
+    .bg-img {
+      padding: 40px;
+    }
+
+    .content {
+      width: 90%;
+      height: 100%;
+      h1.title{
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin: 10px 0;
+       
+      }
+  
+      button {
+        margin-top: 10px;
+        padding: 6px 15px;
+      }
+    }
+  }
+    
+}

@@ -1,0 +1,113 @@
+.card-details{
+    h4.summary{
+        padding: 0;
+
+    }
+    input{
+        &:focus{
+            outline: none !important;
+        }
+    }
+    .payment-details-span{
+        background-color: #ff6739 !important;
+    }
+    .content-card-datails{
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        
+        .wrapper{
+            padding: 15px 0;
+            border-bottom: 1px solid rgb(204, 199, 199);
+        
+               .text{
+                   display: flex;
+                   justify-content: space-between;
+               }
+        }
+
+        .payment{
+            padding: 0;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card-number{
+                display: flex;
+                justify-content: space-between;
+
+                .number{
+                    display: flex;
+                    align-items: center;
+                    .icon{
+                        padding: 5px 5px 5px 0;
+                        color: rgb(78, 73, 73);
+                    }
+                    
+                    input{
+                        border: none;
+                        background-color: transparent;
+                        color: rgb(58, 53, 53);
+                        text-transform: capitalize;
+                        &::placeholder{
+                            color: rgb(58, 53, 53);
+                        }
+                    }
+                    
+                }
+
+                .card-code{
+                    display: flex;
+                    input{
+                        text-transform: uppercase;
+                        width: 40px;
+                        border: none;
+                        background-color: transparent;
+                        color: rgb(58, 53, 53);
+                        &::placeholder{
+                            color: rgb(58, 53, 53);
+                        }
+                    }
+                    span.line{
+                        margin: 0 5px;
+                    }
+                }
+
+               
+            }
+        }
+
+        div.check-foot{
+            margin: 10px 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+
+            .back-cart {
+                border:1px solid  #ed6436;
+                color: #ed6436;
+                font-weight: 600;
+                background-color: rgba(243, 243, 243, .6);
+                padding: 6px 7px;
+                transition: all .3s ease-out;
+                &:hover{
+                    color: white;
+                    background-color:  #ed6436;
+                }
+            }
+
+            .next{
+                border:1px solid  black;
+                color: white;
+                font-weight: 600;
+                background-color: black;
+                padding: 6px 8px;
+                transition: all .3s ease-out;
+                &:hover{
+                    color: black;
+                    background-color:  white;
+                }
+            }
+        }
+    }
+}

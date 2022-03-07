@@ -1,0 +1,347 @@
+.product2{
+    background-color: #f6f6f6;
+    padding: 50px 10px 70px;
+    text-align: center;
+    .title {
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        display: flex;
+        justify-content: flex-start;
+        .HeadingTitleIcon {
+          position: absolute;
+          bottom: 0px;
+          left: -20px;
+          width: 80px;
+          height: 80px;
+          transform: rotate(20deg);
+        }
+        h1 {
+          
+          font-weight: 700;
+          font-size: 36px;
+          z-index: 1;
+          position: relative;
+          margin: 15px 0;
+          font-family: "Nunito", sans-serif !important;
+          span {
+            color: #ff6739;
+          }
+          &:nth-child(1) {
+            font-family: "Nunito", sans-serif !important;
+          }
+          &:nth-child(2) {
+            font-family: "Pacifico", cursive;
+          }
+        }
+      }
+      .slide{
+        text-align: center;
+        margin: 0px 10px;
+        padding: 10px;
+        border: 4px solid #eee2de;
+        box-shadow: 3px 2px 3px 3px rgba(202, 194, 194, 0.776);
+        background-color: white;
+        border-radius: 10px;
+        transition: all 0.4s ease-in-out;
+        position: relative;   
+
+        cursor: pointer;
+        &:hover {
+          border: 4px solid #fc950a;
+          
+  
+          .img-content {
+            .hover-img {
+              display: block;
+              transition: all 0.6s ease-in-out;
+              transform: translateX(-100%);
+            }
+          }
+          .title-h5 {
+            color: #ed6436 !important;
+          }
+          .price {
+            color: #ed6436 !important;
+          }
+          .hover-icons {
+            display: block !important;
+          }
+        }
+  
+        .new {
+          color: white;
+          background-color: #ff6739;
+          padding: 5px 10px;
+          font-size: 9px;
+          font-weight: 600;
+          position: absolute;
+          top: 4%;
+          right: 10%;
+          border-radius: 5px;
+        }
+        .hover-icons {
+          position: absolute;
+          top: 30%;
+          right: 12%;
+          display: flex;
+          flex-direction: column;
+          display: none;
+          transition: all 0.2s ease-in-out;
+          a {
+            border: none;
+            box-shadow: 3px 2px 3px 3px rgba(202, 194, 194, 0.776);
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            margin: 3px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+            transition: all 0.2s ease-in-out;
+            i {
+              color: rgb(92, 89, 89);
+            }
+            &:hover {
+              background-color: #ed6436;
+              i {
+                color: white;
+              }
+            }
+          }
+        }
+  
+        .img-content {
+          position: relative;
+          width: 100%;
+          text-align: center;
+  
+          .main-img {
+            display: block;
+            width: 100%;
+          }
+          .hover-img {
+            width: 100%;
+            position: absolute;
+            transition: all 0.9s ease-in-out;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            display: none;
+          }
+        }
+  
+        .card-body {
+
+          .comments_note {
+            .star_content {
+              display: flex;
+              justify-content: center;
+              margin-bottom: 10px;
+              .star {
+                &:nth-child(1) {
+                  color: #fc950a;
+                }
+                &:nth-child(2) {
+                  color: #fc950a;
+                }
+                &:nth-child(3) {
+                  color: #fc950a;
+                }
+              }
+            }
+          }
+          .card-title {
+            height: 40px;
+            transition: all 0.2s ease-in-out;
+            color: rgb(85, 78, 78);
+            margin: 0;
+          }
+          .price {
+            transition: all 0.2s ease-in-out;
+            font-size: 20px;
+            font-weight: 500;
+            color: #240807;
+            margin: 0;
+          }
+          .btn.addtocard {
+            margin-top: 10px;
+            font-size: 14px;
+            font-family: "Nunito", sans-serif;
+            background-color: #ff6739;
+            color: white;
+            font-weight: 700;
+            padding: 8px 10px;
+            border-radius: 15px;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+
+
+      }
+
+      .slick-prev:before{
+        color: #ed6436 !important;
+        font-size: 32px;
+        opacity: 1;
+        border-radius: 2px !important;
+      }
+      .slick-next:before{
+        color: #ed6436 !important;
+        font-size: 32px;
+        opacity: 1;
+      }
+
+      .slick-prev{
+        position: absolute;
+        top: -35px;
+        left: 92%;
+        border-radius: none !important;
+        width: 50px;
+        height: 50px;
+      }
+      .slick-next{
+        position: absolute;
+        top: -35px;
+        right: 6px;
+        width: 50px;
+        height: 50px;
+      }
+      
+      }
+
+
+      @media only screen and (max-width: 1200px) {
+        .product2{
+          padding: 50px;
+        
+
+          .slick-prev{
+            position: absolute;
+            top: -35px;
+            left: 90%;
+         
+          }
+          .slick-next{
+            position: absolute;
+            top: -35px;
+            right: 0%;
+          }
+        }
+      }
+     
+ @media only screen and (max-width: 992px) {
+        .product2{
+          padding: 50px;
+          .title {
+            margin-bottom: 5px;
+            
+            h1 {   
+              font-weight: 700;
+              font-size: 30px;
+             
+            }
+          }
+          .slide {
+            margin: 10px !important;
+           
+            .card-body {
+
+             
+              .card-title {
+                height: 30px;
+                transition: all 0.2s ease-in-out;
+                color: rgb(85, 78, 78);
+                margin: 0;
+                font-size: 18px;
+              }
+              .price {
+                font-size: 16px;
+                
+              }
+              .btn.addtocard {
+                margin-top: 10px;
+                font-size: 12px;
+              }
+            }
+          }
+
+          .slick-prev{
+            position: absolute;
+            top: -35px;
+            left: 87%;
+         
+          }
+          .slick-next{
+            position: absolute;
+            top: -35px;
+            right: 0%;
+          }
+        }
+      }
+
+  
+ @media only screen and (max-width: 768px) {
+        .product2{
+          padding: 20px;
+          .title {
+            margin-bottom: 5px;
+            
+            h1 {   
+              font-weight: 500;
+              font-size: 24px;
+             
+            }
+          }
+          .slider-product2{
+            padding: 0 35px ;
+          }
+          .slide {
+            margin: 10px !important;
+           
+            .card-body {
+
+             
+              .card-title {
+                height: 30px;
+                transition: all 0.2s ease-in-out;
+                color: rgb(85, 78, 78);
+                margin: 0;
+                font-size: 18px;
+              }
+              .price {
+                font-size: 16px;
+                
+              }
+              .btn.addtocard {
+                margin-top: 10px;
+                font-size: 12px;
+              }
+            }
+          }
+
+          .slick-prev{
+            position: absolute;
+            top: -35px;
+            left: 80%;
+         
+         
+          }
+          .slick-next{
+            position: absolute;
+            top: -35px;
+            right: -5%;
+          }
+          .slick-prev:before{
+            font-size: 28px;     
+          }
+          .slick-next:before{
+            font-size: 28px;
+          }
+        }
+      }

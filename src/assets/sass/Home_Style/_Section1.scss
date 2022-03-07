@@ -1,0 +1,174 @@
+.section1{
+    padding: 20px 0;
+   
+    .bg-img {
+        width: 100%;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 300px ;
+        border-radius: 20px;
+        padding: 35px;
+        display: flex;
+        align-items: flex-end;
+        .text{
+            width: 70%;
+            font-family: "Nunito", sans-serif;
+            .title1{
+                color: #734723;
+            }
+            .title2{
+                color: #4F3881;
+            }
+            .title3{
+                color: #36616D;
+            }   
+            p{
+                font-size: 32px;
+                font-weight: bold;
+               
+            }
+
+            button{
+                border-radius: 25px;
+                border: none;
+                padding: 10px 35px;
+                color: white;
+                transition: 0.2s all ease-in-out;
+                &:hover {
+                    background-color: #ff6739;
+                }
+            }
+
+            .btn-1{
+                background-color: #734723;
+            }
+            
+            .btn-2{
+                background-color: #4F3881;
+            }
+
+            .btn-3{
+                background-color: #36616D;
+            } 
+        }
+       
+    }
+    .bg-img-1 {
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/banner-7.jpg.webp");
+    }
+    .bg-img-2 {
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/banner-8.jpg.webp");
+    }
+    .bg-img-3 {
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/banner-9.jpg.webp");
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .section1{
+        .bg-img { 
+            height: 250px ;
+            border-radius: 20px;
+            padding: 20px;
+            .text{
+                width: 50%;
+                  
+                p{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                button{
+                    padding: 8px 25px;
+                }
+            }
+        }
+            
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .section1{
+        padding: 20px 0;
+        .bg-img { 
+            height: 250px ;
+            border-radius: 20px;
+            padding: 20px;
+            .text{
+                width: 70%;
+                  
+                p{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                button{
+                    padding: 8px 25px;
+                }
+            }
+        }
+            
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section1{
+        .bg-img { 
+            height: 250px ;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            .text{
+                width: 70%;
+                  
+                p{
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                button{
+                    padding: 8px 25px;
+                }
+            }
+        }
+
+            
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .section1{
+        .bg-img { 
+            height: 250px ;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            .text{
+                width: 70%;
+                  
+                p{
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                button{
+                    padding: 8px 25px;
+                }
+            }
+        }
+
+        .row{
+            display: flex !important;
+            justify-content: center !important;
+        }
+            
+    }
+}
+
+
+

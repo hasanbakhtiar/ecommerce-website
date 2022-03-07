@@ -1,0 +1,162 @@
+.signin {
+  padding: 45px 0;
+
+  font-family: "Roboto", sans-serif;
+  .container {
+    max-width: 80%;
+  }
+  .signInContent {
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 3px 2px 4px 4px rgba(0, 0, 0, 0.4);
+    input {
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    .left {
+      border-right: 1.5px solid rgba(206, 204, 204, 0.8);
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h4 {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      .input-content {
+        margin: 15px 0;
+        position: relative;
+        i {
+          position: absolute;
+          top: 26%;
+          padding-left: 10px;
+          transition: all 0.4s ease-out;
+          cursor: pointer;
+          color: rgb(75, 74, 74);
+          &:hover {
+            color: #f72a0f;
+          }
+        }
+        input {
+          width: 100%;
+          border: none;
+          padding: 10px 0 10px 30px;
+          border: 0.5px solid gray;
+        }
+      }
+
+      .check {
+        margin-bottom: 10px;
+        label {
+          padding-left: 10px;
+        }
+      }
+
+      .submit-content {
+        button {
+          width: 100%;
+          height: 40px;
+          border: none;
+          background-color: rgb(245, 31, 31);
+          color: white;
+          font-weight: bold;
+          transition: all 0.3s ease-out;
+          &:hover {
+            background-color: rgb(206, 6, 6);
+            color: white;
+          }
+        }
+      }
+    }
+
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 30px;
+      display: flex;
+      .create-account {
+        p {
+          font-weight: 600;
+          font-size: 17px;
+          transition: all 0.4s ease-out;
+          color: rgb(75, 74, 74);
+          text-align: center;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+
+        button {
+          width: 100%;
+          height: 40px;
+          border: none;
+          background-color: rgb(22, 22, 22);
+          color: white;
+          font-weight: bold;
+        }
+      }
+
+      .OR {
+        margin: 15px 0;
+        text-align: center;
+        font-weight: 600;
+        color: rgb(75, 74, 74);
+      }
+
+      .social-signin {
+        width: 100%;
+        height: 40px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        margin: 10px 0;
+        i {
+          position: relative;
+          left: 6px;
+        }
+      }
+
+      .facebook {
+        background-color: rgb(4, 4, 206);
+        transition: all 0.3s ease-out;
+        &:hover {
+          background-color: rgb(9, 9, 122);
+          color: white;
+        }
+      }
+
+      .twitter {
+        background-color: rgb(76, 148, 216);
+        transition: all 0.3s ease-out;
+        &:hover {
+          background-color: rgb(5, 115, 218);
+          color: white;
+        }
+      }
+    }
+
+    .col-end {
+      padding: 15px 0;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        margin: 0;
+        a {
+          color: black;
+          transition: all 0.3s ease-out;
+          &:hover {
+            color: rgb(243, 55, 55);
+          }
+        }
+      }
+      font-weight: 600;
+    }
+  }
+}

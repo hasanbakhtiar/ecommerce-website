@@ -1,0 +1,28 @@
+.checkout-end{
+    .card-text{
+        padding: 10px 0 5px !important;
+        text-align: center;
+        h4{
+            display: inline-block;
+            border-bottom: .67px solid rgb(158, 152, 152);
+            padding-bottom: 10px;
+        }
+      
+    }
+    .back-home{
+        margin: 20px  0;
+        text-align: center;
+        button{
+            border:1px solid  #ff6739;
+            color: white;
+            font-weight: 800;
+            background-color: #ff6739;
+            padding: 6px 7px;
+            transition: all .3s ease-out;
+            &:hover{
+                color: white;
+                background-color:  #ed6436;
+            }
+        }
+    }
+}

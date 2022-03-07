@@ -1,0 +1,370 @@
+.cart {
+  padding: 30px 0;
+
+  .container {
+    max-width: 95%;
+  }
+
+  .title {
+    color: black;
+    font-size: 36px;
+    font-family: "Fredoka One", cursive;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    span{
+      color: #ff6739;
+    }
+  }
+
+  .cart-top {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 0.1px solid rgb(216, 211, 211);
+
+    .shopping {
+      border: 1px solid #ed6436;
+      color: #ff6739;
+      font-weight: 600;
+      background-color: rgba(243, 243, 243, 0.6);
+      padding: 6px 7px;
+      transition: all 0.3s ease-out;
+      &:hover {
+        color: white;
+        background-color: #ed6436;
+      }
+    }
+
+    .checkout {
+      border: 1px solid black;
+      color: white;
+      font-weight: 600;
+      background-color: black;
+      padding: 6px 7px;
+      transition: all 0.3s ease-out;
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+
+    .center-text {
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        margin: 6px;
+        color: black;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        transition: all 0.2s ease-out;
+        &:hover {
+          color: #ff6739;
+        }
+      }
+    }
+  }
+
+  .products {
+    .product {
+      .product-content {
+        width: 100%;
+        margin: 10px 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        box-shadow: 3px 4px 3px 4px rgba(202, 194, 194, 0.776);
+        border-radius: 5px;
+
+        .img {
+          width: 35%;
+          height: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        .product-body {
+          display: flex;
+          padding: 8px;
+          width: 65%;
+          .left {
+            width: 70%;
+          }
+          .right {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .quality {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              button {
+                font-size: 24px;
+                border: none;
+                background-color: transparent;
+                font-weight: 600;
+
+                &:focus {
+                  outline: none;
+                }
+              }
+              span {
+                background-color: rgb(90, 90, 90);
+                background-color: #ff6739;
+                color: white;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                padding: 5px;
+                transition: all 0.3s ease-out;
+                &:hover {
+                  background-color: rgb(49, 47, 47);
+                  color: white;
+                }
+              }
+            }
+            .remove {
+              margin-top: 20px;
+              position: relative;
+              right: 5px;
+              button {
+                background-color: rgb(90, 90, 90);
+                background-color: #ff6739;
+                border-radius: 5px;
+                color: white;
+                border: none;
+                padding: 8px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease-out;
+                &:hover {
+                  background-color: rgb(49, 47, 47);
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cart-foot {
+    margin-top: 20px;
+    .clean {
+      border: 1px solid #ff6739;
+      color: #ff6739;
+      font-weight: 600;
+      background-color: rgba(243, 243, 243, 0.6);
+      padding: 6px 7px;
+      transition: all 0.3s ease-out;
+      &:hover {
+        color: white;
+        background-color: #ff6739;
+      }
+    }
+
+    .buy {
+      border: 1px solid black;
+      color: white;
+      font-weight: 600;
+      background-color: black;
+      padding: 6px 7px;
+      transition: all 0.3s ease-out;
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+
+    .summary {
+      background-color: black;
+      color: white;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.empty-title {
+  color: black;
+  font-size: 36px;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 2px;
+  padding: 30px 0;
+  background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 1100px) {
+  .cart {
+    padding: 30px 0;
+    // background-color: #f5f5f5;
+
+    .container {
+      max-width: 95%;
+    }
+
+    .title {
+      color: black;
+      font-size: 32px;
+      font-family: "Fredoka One", cursive;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .cart-top {
+      padding: 0px 0;
+      display: flex;
+      flex-direction: column;
+
+      .shopping {
+        display: none;
+      }
+
+      .checkout {
+        display: none;
+      }
+
+      .center-text {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    .products {
+      .product {
+        .product-content {
+          width: 100%;
+          margin: 10px 0;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          box-shadow: 3px 3px 3px 3px rgba(202, 194, 194, 0.776);
+          border-radius: 5px;
+
+          .img {
+            width: 35%;
+            height: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .product-body {
+            display: flex;
+            padding: 10px;
+            width: 65%;
+            font-size: 16px;
+            p {
+              margin: 0;
+              margin: 10px 0;
+            }
+            .left {
+              width: 60%;
+            }
+            .right {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cart {
+    padding: 30px 0;
+    // background-color: #f5f5f5;
+
+    .container {
+      max-width: 95%;
+    }
+
+    .title {
+      color: black;
+      font-size: 32px;
+      font-family: "Fredoka One", cursive;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .cart-top {
+      padding: 0px 0;
+      display: flex;
+      flex-direction: column;
+
+      .shopping {
+        display: none;
+      }
+
+      .checkout {
+        display: none;
+      }
+
+      .center-text {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    .products {
+      .product {
+        .product-content {
+          width: 100%;
+          margin: 10px 0;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          box-shadow: 3px 3px 3px 3px rgba(202, 194, 194, 0.776);
+          border-radius: 5px;
+
+          .img {
+            width: 35%;
+            height: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .product-body {
+            display: flex;
+            padding: 10px;
+            width: 65%;
+            font-size: 15px;
+            p {
+              margin: 0;
+              margin: 10px 0;
+            }
+            .left {
+              width: 65%;
+            }
+            .right {
+              width: 35%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

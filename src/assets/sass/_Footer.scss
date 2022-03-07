@@ -1,0 +1,104 @@
+#footer {
+    background-color: #2a292e;
+    padding: 40px 0;
+   position: relative;
+   z-index: 8899;
+   
+    .footer-wrapper.container {
+      max-width: 96%;
+      .footer-top {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: white;
+  
+        .sign-up {
+          padding: 10px;
+          border-right: 2px solid #ff6739;
+          p {
+            color: #ff6739;
+            font-weight: 600;
+            font-size: 24px;
+          }
+          span {
+            color: aliceblue;
+          }
+        }
+  
+        .input-email {
+          position: relative;
+          input {
+            border-radius: 10px;
+            background-color: #4a4a4a;
+            border: none;
+            padding-left: 15px;
+            line-height: 50px;
+            width: 100%;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              color: whitesmoke;
+            }
+          }
+          button {
+            position: absolute;
+            right: 30px;
+            top: 18%;
+            border: none;
+            background-color: #ff6739;
+            padding: 6px 15px;
+            border-radius: 10px;
+            color: white;
+            transition: all 0.4s ease;
+            &:hover {
+              color: #ed6436;
+              background-color: white;
+            }
+          }
+        }
+      }
+  
+      .footer-center {
+        padding: 20px 0 15px;
+        color: white;
+        img {
+          width: 65%;
+          position: relative;
+          bottom: 15px;
+        }
+        p {
+          color: rgb(201, 193, 193);
+          a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+              color: #ed6436;
+            }
+          }
+        }
+        .footer-text {
+          width: 60%;
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            a {
+              font-weight: 500;
+              display: block;
+              padding: 4px 0;
+              text-decoration: none;
+              color: rgb(201, 193, 193);
+              transition: 0.5s all ease-out;
+              &:hover {
+                color: #ed6436;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

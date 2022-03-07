@@ -1,0 +1,42 @@
+.page{
+    .bg{
+        width: 100%;
+        height: 300px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0020/4954/0165/files/banner-2_18b97661-02df-4e6b-a31f-5c896b7de5c4.jpg?v=1534142214);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: 600;
+        .container{
+            display: flex;
+            flex-direction: column;
+           
+            .title{
+                text-decoration: none;
+                color: white;
+            }
+            .title1{
+                font-size: 34px;
+                font-family: "Fredoka One", cursive;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            .pages-link{             
+                font-size: 20px;             
+                .link{
+                    text-decoration: none;
+                    transition: all .3s ease-in-out;
+                    color: white;
+                    &:hover{
+                        color: #ED6436;
+                    }
+                }
+                
+              
+            }
+        }
+    }
+}

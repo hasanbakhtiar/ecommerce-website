@@ -1,0 +1,190 @@
+.brandSection{
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    .container{
+        max-width: 90%;
+        font-family: "Nunito", sans-serif;
+       
+    }
+
+    .title{
+        font-weight: 800;
+        padding-bottom: 10px;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        span{
+            color: #FF6739;
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 22%;
+            height: 3px;
+            border-radius: 5px;
+            background-color: rgb(80, 78, 78);
+        }
+    }
+    .slider-content{
+        margin: 20px 0;
+    }
+   
+    .bg-brands{
+        background-color: white;
+        width: 100%;
+        height: 180px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        border: .1px solid rgba(163, 163, 163, .5);
+        box-shadow: 3px 3px 1px 2px rgba(192, 191, 191, 0.5);
+        transition: all 6s ease-in-out;
+        overflow: hidden;
+        padding: 100px;
+        cursor: pointer;
+        &:hover{
+           background-size: 105%;
+        }
+    }
+    .bg-1{
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/brand-2.jpg.webp");
+    }
+
+    .bg-2{
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/brand-3.jpg.webp");
+    }
+
+    .bg-3{
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/brand-4.jpg.webp");
+    }
+
+    .bg-4{
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/brand-5.jpg.webp");
+    }
+    .bg-5{
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/brand-1.jpg.webp");
+    }
+    .bg-6{
+        background-image: url("https://wpbingosite.com/wordpress/petio/wp-content/webp-express/webp-images/uploads/2021/03/brand-4.jpg.webp");
+    }
+
+    .slick-prev:before{
+        color: #ed6436 !important;
+        font-size: 32px;
+        opacity: 1;
+        border-radius: 2px !important;
+      }
+      .slick-next:before{
+        color: #ed6436 !important;
+        font-size: 32px;
+        opacity: 1;
+      }
+
+      .slick-prev{
+        position: absolute;
+        top: -50px;
+        left: 92%;
+        border-radius: none !important;
+        width: 50px;
+        height: 50px;
+      }
+      .slick-next{
+        position: absolute;
+        top: -50px;
+        right: 6px;
+        width: 50px;
+        height: 50px;
+      }
+}
+
+@media only screen and (max-width: 992px) {
+    .brandSection{
+        padding: 40px 0;
+        .container{
+            max-width: 95%;
+         
+        }
+
+        .title{
+            font-size: 30px;
+        }
+        .slider-content{
+            margin: 20px 0;
+            .bg-brands{
+                width: 90% !important;
+                height: 150px;
+            }
+        }
+
+        .slick-prev{
+            position: absolute;
+            top: -50px;
+            left: 88%;
+            border-radius: none !important;
+            width: 50px;
+            height: 50px;
+          }
+          .slick-next{
+            position: absolute;
+            top: -50px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+          }
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .brandSection{
+        padding: 40px 0;
+        .container{
+            max-width: 90%;
+         
+        }
+        .title{
+            font-size: 24px !important;
+            
+        }
+               
+        .bg-brands{
+            background-color: white;
+            width: 100%;
+            height: 180px;
+           
+            padding: 65px;
+        }
+
+        .title{
+            font-size: 30px;
+        }
+        .slider-content{
+            margin: 20px 0;
+            .bg-brands{
+                width: 90% ;
+                height: 150px;
+            }
+        }
+
+        .slick-prev{
+            position: absolute;
+            top: -50px;
+            left: 78%;
+            border-radius: none !important;
+            width: 50px;
+            height: 50px;
+          }
+          .slick-next{
+            position: absolute;
+            top: -50px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+          }
+        
+    }
+}

@@ -1,0 +1,45 @@
+.section-end {
+    padding: 40px 0 40px;
+    
+      .boxs{
+        background-color: #ED6436;
+        border-radius: 15px;
+        padding: 40px;
+        color: white;
+        .box{
+          text-align: center;
+  
+          .bg-img{
+            width: 100%;
+            margin-bottom: 15px;
+
+            img {
+              max-width: 150px;
+              position: relative;   
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+              // &:hover {
+              //   animation-name: example;
+              //   animation-timing-function: ease;
+              // }
+              animation-name: example;
+              animation-timing-function: ease;
+            }
+            
+            
+           
+          }
+          @keyframes example {
+            0%   {transform: translateX(0px);}
+            25%  {transform: translateX(-15px);}
+            50%  {transform: translateX(15px);}
+            75%  {transform: translateX(-15px);}
+            100% {transform: translateX(0px);}
+          }
+        }
+      }
+    }
+  
+  
+  
+  

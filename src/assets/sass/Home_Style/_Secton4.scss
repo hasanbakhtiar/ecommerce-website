@@ -1,0 +1,316 @@
+.section4 {
+  padding: 70px 0 50px;
+ 
+  .container {
+    max-width: 95%;
+    text-align: center;
+
+    .title {
+      width: 100%;
+      position: relative;
+      .icon1{
+        position: absolute;
+        top: 10%;
+        left: 15%;
+      }
+
+      .icon2{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 100px;
+      }
+
+      .title-h2 {
+        font-family: "Fredoka One", cursive;
+        position: relative;
+        line-height: 50px;
+        text-align: center;
+        color: #000;
+        font-size: 48px;
+        font-weight: 500;
+        padding: 15px 0;
+        
+        
+        &::after {
+          content: "";
+          background-repeat: repeat;
+          background-image: url(https://cdn.shopify.com/s/files/1/0912/1746/files/leo-gopet-before-title.png?v=1635386934);
+          bottom: 0px;
+          left: 48%;
+          width: 70px;
+          position: absolute;
+          display: inline-block;
+          height: 6px;
+        }
+      }
+
+      p {
+        margin: 15px 0 25px;
+        color: rgb(92, 89, 89);
+        font-weight: 600;
+      }
+    }
+
+    .boxs-content {
+      padding: 20px 40px;
+
+      .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        transition: transform .4s;
+       
+        &:hover{
+          box-shadow: 10px 10px 18px rgba(33,33,33,.2); 
+          border: 1px solid #ccc;
+          transform: scale(1.1);
+          border: .4s;
+        
+          img{
+            animation-name: example;
+          }
+        }
+
+        img{
+          position: relative;   
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+             
+              animation-timing-function: ease;
+        }
+        @keyframes example {
+          0%   {transform: translateX(0px);}
+          25%  {transform: translateX(-15px);}
+          50%  {transform: translateX(15px);}
+          75%  {transform: translateX(-15px);}
+          100% {transform: translateX(0px);}
+        }
+        .text {
+          width: 80%;
+          h5 {
+            font-weight: bolder;
+            margin: 10px 0;
+            color: #000;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000;
+            font-family: "Conv_BwSeidoRoundDEMO-Bold";
+          }
+          .desc{
+            color: rgb(97, 91, 91);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section4 {
+    padding: 20px 0 30px;
+    .container {
+      max-width: 100% !important;
+      text-align: center;
+
+      .title {
+        width: 100%;
+        position: relative;
+        .icon1{
+          position: absolute;
+          top: -20%;
+          left: 5%;
+        }
+  
+        .icon2{
+          position: absolute;
+          top: -25%;
+          right: 5%;
+          width: 90px;
+        }
+  
+        .title-h2 {
+          font-family: "Fredoka One", cursive;
+          position: relative;
+          line-height: 50px;
+          text-align: center;
+          color: #000;
+          font-size: 44px;
+          font-weight: 500;
+          padding: 15px 0;
+          
+          
+          &::after {
+            content: "";
+            background-repeat: repeat;
+            background-image: url(https://cdn.shopify.com/s/files/1/0912/1746/files/leo-gopet-before-title.png?v=1635386934);
+            bottom: 0px;
+            left: 45%;
+            width: 70px;
+            position: absolute;
+            display: inline-block;
+            height: 6px;
+          }
+        }
+  
+        p {
+          margin: 15px 0 25px;
+          color: rgb(92, 89, 89);
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+
+      .box{
+        margin: 15px 0;
+        .text {
+          width: 90%;
+          h5 {
+            font-weight: bolder;
+            margin: 10px 0;
+            color: #000;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000;
+            font-family: "Conv_BwSeidoRoundDEMO-Bold";
+          }
+          .desc{
+            color: rgb(97, 91, 91);
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .section4 {
+    padding: 60px 0 30px;
+    .container {
+      max-width: 95%;
+      text-align: center;
+
+      .title {
+        width: 100%;
+        position: relative;
+        .icon1{
+          position: absolute;
+          top: -20%;
+          left: 5%;
+        }
+  
+        .icon2{
+          position: absolute;
+          top: -25%;
+          right: -3%;
+          width: 90px;
+        }
+  
+        .title-h2 {
+          font-family: "Fredoka One", cursive;
+          position: relative;
+          line-height: 50px;
+          text-align: center;
+          color: #000;
+          font-size: 40px;
+          font-weight: 500;
+          padding: 15px 0;
+          z-index: 1 !important;
+          
+          &::after {
+            content: "";
+            background-repeat: repeat;
+            background-image: url(https://cdn.shopify.com/s/files/1/0912/1746/files/leo-gopet-before-title.png?v=1635386934);
+            bottom: 0px;
+            left: 45%;
+            width: 70px;
+            position: absolute;
+            display: inline-block;
+            height: 6px;
+          }
+        }
+  
+        p {
+          margin: 15px 0 25px;
+          color: rgb(92, 89, 89);
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+
+      .box{
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section4 {
+    padding: 40px 0 30px;
+    .container {
+      max-width: 95%;
+      text-align: center;
+
+      .title {
+        width: 100%;
+        position: relative;
+        
+        .icon1{
+          position: absolute;
+          top: -5%;
+          left: 5%;
+        }
+  
+        .icon2{
+          position: absolute;
+          top: -5%;
+          right: 3%;
+          width: 90px;
+        }
+  
+        .title-h2 {
+          font-family: "Fredoka One", cursive;
+          position: relative;
+          line-height: 50px;
+          text-align: center;
+          color: #000;
+          font-size: 32px;
+          font-weight: 500;
+          padding: 15px 0;
+          z-index: 1 !important;
+          
+          &::after {
+            content: "";
+            background-repeat: repeat;
+            background-image: url(https://cdn.shopify.com/s/files/1/0912/1746/files/leo-gopet-before-title.png?v=1635386934);
+            bottom: 0px;
+            left: 45%;
+            width: 70px;
+            position: absolute;
+            display: inline-block;
+            height: 6px;
+          }
+        }
+  
+        p {
+          margin: 15px 0 25px;
+          color: rgb(92, 89, 89);
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+
+      .box{
+        margin: 15px 0;
+      }
+    }
+  }
+}
